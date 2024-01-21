@@ -1,6 +1,6 @@
 async function check_valid_user(userName) {
     const url = "https://api.github.com/users/" + userName;
-    const token = "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";
+    const token = "";
   
     try {
       let response = await fetch(url, {

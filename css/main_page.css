@@ -73,58 +73,72 @@ header {
 }
 
 body {
-    background-color: #f6f8fa; /* GitHub background color */
-  }
+    background-color: #f6f8fa;
+    /* GitHub background color */
+}
 
-  .container {
+.container {
     margin-top: 20px;
-  }
+}
 
-  .profile {
-    background-color: #ffffff; /* White background for profile */
+.profile {
+    background-color: #ffffff;
+    /* White background for profile */
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for profile */
-  }
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Box shadow for profile */
+}
 
-  .repositories {
-    background-color: #ffffff; /* White background for repositories */
+.repositories {
+    background-color: #ffffff;
+    /* White background for repositories */
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for repositories */
-  }
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Box shadow for repositories */
+}
 
-  .repository {
-    border: 1px solid #e1e4e8; /* GitHub repository border color */
+.repository {
+    border: 1px solid #e1e4e8;
+    /* GitHub repository border color */
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 15px;
-  }
+}
 
- /* Custom CSS for two-column layout */
- .repositories {
+/* Custom CSS for two-column layout */
+.repositories {
     display: flex;
     flex-wrap: wrap;
-  }
+}
 
-  .repository {
-    width: 48%; /* Adjust as needed, leaving some space for margin */
-    margin: 1%; /* Adjust margin as needed */
+.repository {
+    width: 48%;
+    /* Adjust as needed, leaving some space for margin */
+    margin: 1%;
+    /* Adjust margin as needed */
     box-sizing: border-box;
     padding: 10px;
-    border: 1px solid #ddd; /* Border for each repository box */
-    background-color: #f9f9f9; /* Background color for each repository box */
-  }
+    border: 1px solid #ddd;
+    /* Border for each repository box */
+    background-color: #f9f9f9;
+    /* Background color for each repository box */
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .repository {
-      width: 100%; /* Make it full width on smaller screens */
+        width: 100%;
+        /* Make it full width on smaller screens */
     }
-  }
+}
 
 
-  /* Pagination style */
-  #pagination {
+/* Pagination style */
+#pagination {
     margin-top: 20px;
-  }
+    justify-content: center;
+}
+
+

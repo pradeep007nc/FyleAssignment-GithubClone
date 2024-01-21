@@ -2,7 +2,7 @@ async function fetch_user_info(username) {
   obj = {};
 
   const url = `https://api.github.com/users/${username}`;
-  const token = "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";
+  const token = "";
 
   try {
     let response = await fetch(url, {
@@ -28,7 +28,7 @@ async function fetch_user_info(username) {
 // Function to fetch the user data from GitHub API
 async function fetch_user_data(username, pageSize) {
   const url = `https://api.github.com/users/${username}/repos?per_page=${pageSize}`;
-  const token = "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";
+  const token = "";
 
   try {
     let response = await fetch(url, {
