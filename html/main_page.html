@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/main_page.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous" />
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="../js/data_fetch.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", async function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const username = urlParams.get("username");
+
+      if (username) {
+        const data = await fetch_user_info(username);
+        console.log(data);
+
+        updateProfileSection(data);
+
+        const repositoriesData = await fetch_user_data(username, size=10);
+        updateRepositoriesSection(repositoriesData);
+
+      } else {
+        window.alert("Username not provided in the URL");
+        window.location.href = "../html/entry_page.html";
+      }
+    });
+  </script>
+
+  <title>GitHub Profile</title>
+</head>
+
+<body>
+  <header>
+    <h1>Fyle assignment</h1>
+  </header>
+
+  <div class="container">
+    <div class="profile" id="profileSection">
+      <!-- Profile information will be dynamically added here -->
+    </div>
+
+    <div class="repositories" id="repositoriesSection">
+      <!-- Repositories information will be dynamically added here -->
+    </div>
+  </div>
+</body>
+</html>

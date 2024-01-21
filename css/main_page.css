@@ -1,0 +1,130 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #24292e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.profile {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    display: block;
+}
+
+.user-info {
+    text-align: center;
+}
+
+.user-info h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #0366d6;
+}
+
+.user-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #586069;
+}
+
+.repositories {
+    margin-top: 30px;
+}
+
+.repository {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.repository h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #0366d6;
+}
+
+.repository p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #586069;
+}
+
+body {
+    background-color: #f6f8fa; /* GitHub background color */
+  }
+
+  .container {
+    margin-top: 20px;
+  }
+
+  .profile {
+    background-color: #ffffff; /* White background for profile */
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for profile */
+  }
+
+  .repositories {
+    background-color: #ffffff; /* White background for repositories */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for repositories */
+  }
+
+  .repository {
+    border: 1px solid #e1e4e8; /* GitHub repository border color */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+
+ /* Custom CSS for two-column layout */
+ .repositories {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .repository {
+    width: 48%; /* Adjust as needed, leaving some space for margin */
+    margin: 1%; /* Adjust margin as needed */
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ddd; /* Border for each repository box */
+    background-color: #f9f9f9; /* Background color for each repository box */
+  }
+
+  @media (max-width: 768px) {
+    .repository {
+      width: 100%; /* Make it full width on smaller screens */
+    }
+  }
+
+
+  /* Pagination style */
+  #pagination {
+    margin-top: 20px;
+  }
